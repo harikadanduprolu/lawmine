@@ -23,7 +23,7 @@
 }
 
 .about-content h2 {
-    color: #1DB954; /* Bright green for emphasis */
+    color: #12290b; /* Bright green for emphasis */
     font-size: 2.8rem;
     margin-bottom: 1.5rem;
     font-weight: 700;
@@ -75,7 +75,7 @@
     margin: 1.2rem 0;
     padding: 1.8rem 2.5rem;
     border-radius: 15px;
-    background: linear-gradient(135deg, #B2EBF2, #80DEEA); /* Bright light blue gradient */
+    background: linear-gradient(135deg, #b2f2bf, #53662cb0); /* Bright light blue gradient */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: slideUp 1s ease forwards;
@@ -83,7 +83,7 @@
 }
 
 .team-member:nth-child(even) {
-    background: linear-gradient(135deg, #C8E6C9, #A5D6A7); /* Bright light green gradient for contrast */
+    background: linear-gradient(135deg, #53662cb0, #A5D6A7); /* Bright light green gradient for contrast */
     color: #333; /* Dark gray for text readability */
     flex-direction: row-reverse;
 }
@@ -120,14 +120,14 @@
 }
 
 .member-info h3 {
-    color: #1DB954; /* Bright green to match the title */
+    color: #123820; /* Bright green to match the title */
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
     font-weight: bold;
 }
 
 .member-info p {
-    color: #444; /* Medium gray for readability */
+    color: #300505; /* Medium gray for readability */
     font-size: 1.1rem;
     line-height: 1.7;
 }

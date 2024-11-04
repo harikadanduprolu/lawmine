@@ -185,3 +185,39 @@ button {
 button:hover {
   background-color: #000000; /* Change to a different color on hover */
 }
+
+
+/* Main Content for Home */
+.home-main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-image: url('https://img.freepik.com/premium-photo/international-law-environment-law-green-world-gavel-with-scales-justice-books-law_873668-1806.jpg');
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  opacity: 0.9; /* Adjust opacity to allow for better readability */
+}
+
+/* Other Main Content (default) */
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Optional: Adjust the section background to be more transparent */
+.section {
+  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.185); /* Slightly more opaque for better readability */
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  animation: fadeIn 1s ease;
+  max-width: 800px;
+  width: 100%;
+}
