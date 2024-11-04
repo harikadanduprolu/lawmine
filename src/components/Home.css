@@ -2,7 +2,7 @@
 .home-container {
     width: 100%;
     padding: 2rem;
-    background: linear-gradient(135deg, #e0f7fa, #e8f5e9);
+    background: linear-gradient(135deg, #e0f7fa69, #e8f5e96c);
     overflow: hidden;
     position: relative;
   }
@@ -19,7 +19,7 @@
   .welcome-text {
     font-size: 3.5rem;
     font-weight: 700;
-    background: linear-gradient(to right, #1DB954, #00bfa5);
+    background: linear-gradient(to right, #0c2916, #00bf36);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0.5rem;
@@ -37,7 +37,7 @@
   
   .welcome-subtext {
     font-size: 1.7rem;
-    color: #555;
+    color: #000000;
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 1.2s ease forwards;
@@ -68,7 +68,7 @@
   
   /* Locations Section */
   .locations-section {
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.2);
     padding: 2.5rem;
     border-radius: 16px;
     margin-bottom: 3rem;
@@ -90,11 +90,11 @@
     text-align: center;
     font-size: 2.2rem;
     font-weight: bold;
-    color: #1DB954;
+    color: #212e26;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 1.5rem;
-    background: linear-gradient(to right, #1DB954, #17a045);
+    background: linear-gradient(to right, #0d391d, #111713);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: color 0.4s ease;
@@ -120,13 +120,13 @@
   
   .locations-list li:hover {
     transform: scale(1.1) rotate(2deg);
-    color: #1DB954;
+    color: #212c24;
     text-shadow: 0 0 10px rgba(29, 185, 84, 0.5);
   }
   
   .locations-list li svg {
     margin-right: 0.5rem;
-    color: #1DB954;
+    color: #0d3e1e;
     transition: color 0.4s ease, transform 0.4s ease;
   }
   
@@ -137,7 +137,7 @@
   
   /* Description Section */
   .description-section {
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.224);
     padding: 2.5rem;
     border-radius: 16px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
@@ -155,7 +155,7 @@
     text-align: center;
     font-size: 2.2rem;
     font-weight: bold;
-    color: #1DB954;
+    color: #0d2d18;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 1.5rem;
@@ -165,7 +165,7 @@
   
   .description-section p {
     font-size: 1.1rem;
-    color: #444;
+    color: #000000;
     line-height: 1.6;
     text-align: justify;
     transition: color 0.3s ease, transform 0.3s ease;
@@ -174,7 +174,7 @@
   }
   
   .description-section:hover p {
-    color: #1DB954;
+    color: #162b1d;
     transform: translateX(5px);
   }
   
@@ -284,5 +284,30 @@
     .locations-list li {
       margin: 0.5rem 0;
     }
+  }
+  /* Main Content */
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-image: url('https://img.freepik.com/premium-photo/international-law-environment-law-green-world-gavel-with-scales-justice-books-law_873668-1806.jpg');
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    opacity: 0.9; /* Adjust opacity to allow for better readability */
+  }
+  
+  /* Optional: Adjust the section background to be more transparent */
+  .section {
+    padding: 2.5rem;
+    background: rgba(255, 255, 255, 0.185); /* Slightly more opaque for better readability */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    animation: fadeIn 1s ease;
+    max-width: 800px;
+    width: 100%;
   }
   
