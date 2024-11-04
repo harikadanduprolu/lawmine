@@ -1,0 +1,103 @@
+/* src/components/About.css */
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    position: relative;
+  }
+  
+  .about-content {
+    flex: 1;
+    padding-right: 2rem;
+  }
+  
+  .about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team {
+    position: relative;
+    margin-top: 2rem;
+  }
+  
+  .team-member {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0; /* Space between team members */
+    transition: transform 0.3s ease;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .layout-0 {
+    background: #e8f7fc;
+  }
+  
+  .layout-1 {
+    background: #fce4ec;
+    flex-direction: row-reverse;
+  }
+  
+  .layout-2 {
+    background: #fffde7;
+    flex-direction: row;
+  }
+  
+  .layout-3 {
+    background: #e3f2fd;
+    flex-direction: row-reverse;
+  }
+  
+  .member-image {
+    width: 150px; /* Set a specific width */
+    height: 150px; /* Set a specific height */
+    margin-right: 1rem; /* Space between image and text */
+    overflow: hidden;
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  .member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .member-info {
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .member-info h3 {
+    color: #1DB954;
+    margin-bottom: 0.5rem;
+  }
+  
+  .member-info p {
+    color: #444;
+  }
+  
+  .team-member:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+  }
+  
+  .team-member:hover .member-image img {
+    transform: scale(1.05); /* Image zoom on hover */
+  }
+  
