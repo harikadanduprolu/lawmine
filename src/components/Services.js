@@ -38,6 +38,7 @@ const Services = () => {
       description: "Professional legal assistance for central government tribunal cases, ensuring thorough and reliable advocacy.",
       icon: <FaRegBuilding />
     },
+    
   ];
 
   return (

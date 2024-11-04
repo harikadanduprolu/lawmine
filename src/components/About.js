@@ -24,6 +24,16 @@ const About = () => {
       specialization: "Legal Adviser (Immigration law)",
       image: "https://via.placeholder.com/150" // Replace with actual image path
     },
+    {
+      name: "M Rajitha",
+      specialization: "Legal Consultant (Family Law, Constitutional Law)",
+      image: "https://via.placeholder.com/150" // Replace with actual image path
+    },
+    {
+      name: "Bhargav",
+      specialization: "Legal Consultant (All cases)",
+      image: "https://via.placeholder.com/150" // Replace with actual image path
+    },
   ];
 
   return (

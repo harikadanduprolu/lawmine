@@ -1,103 +1,137 @@
-/* src/components/About.css */
-
 .about-section {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 2rem;
-    background: rgba(255, 255, 255, 0.8);
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff); /* Bright light blue and white gradient */
     border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(10px);
-    position: relative;
-  }
-  
-  .about-content {
-    flex: 1;
-    padding-right: 2rem;
-  }
-  
-  .about-image {
-    flex: 1;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); /* Softer shadow for a floating effect */
+    max-width: 1400px;
+    margin: auto;
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+.about-section:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow on hover */
+}
+
+.about-content {
+    text-align: center;
+    max-width: 1000px;
+    color: #333; /* High-contrast color for text */
+    padding-bottom: 2rem;
+}
+
+.about-content h2 {
+    color: #1DB954; /* Bright green for emphasis */
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    animation: fadeIn 1.5s ease; /* Subtle fade-in animation */
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    color: #444; /* Medium gray for readability */
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.about-image {
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
-    align-items: center;
-  }
-  
-  .about-image img {
-    max-width: 100%;
+}
+
+.about-image img {
+    max-width: 90%;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .team {
-    position: relative;
-    margin-top: 2rem;
-  }
-  
-  .team-member {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05); /* Light shadow */
+    transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.05); /* Subtle zoom on hover */
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.team-member {
     display: flex;
     align-items: center;
-    margin: 1.5rem 0; /* Space between team members */
-    transition: transform 0.3s ease;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .layout-0 {
-    background: #e8f7fc;
-  }
-  
-  .layout-1 {
-    background: #fce4ec;
+    width: 100%;
+    max-width: 850px;
+    margin: 1.2rem 0;
+    padding: 1.8rem 2.5rem;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #B2EBF2, #80DEEA); /* Bright light blue gradient */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: slideUp 1s ease forwards;
+    opacity: 0; /* Animation starts from transparent */
+}
+
+.team-member:nth-child(even) {
+    background: linear-gradient(135deg, #C8E6C9, #A5D6A7); /* Bright light green gradient for contrast */
+    color: #333; /* Dark gray for text readability */
     flex-direction: row-reverse;
-  }
-  
-  .layout-2 {
-    background: #fffde7;
-    flex-direction: row;
-  }
-  
-  .layout-3 {
-    background: #e3f2fd;
-    flex-direction: row-reverse;
-  }
-  
-  .member-image {
-    width: 150px; /* Set a specific width */
-    height: 150px; /* Set a specific height */
-    margin-right: 1rem; /* Space between image and text */
+}
+
+.team-member:hover {
+    transform: translateY(-8px); /* Floating effect on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.member-image {
+    width: 130px;
+    height: 130px;
+    margin-right: 1.5rem;
+    border-radius: 50%; /* Circle shape for a modern look */
     overflow: hidden;
-    border-radius: 10px; /* Rounded corners */
-  }
-  
-  .member-image img {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.member-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
-  }
-  
-  .member-info {
-    padding: 1rem;
+}
+
+.member-info {
     text-align: left;
-  }
-  
-  .member-info h3 {
-    color: #1DB954;
+    flex: 1;
+}
+
+.member-info h3 {
+    color: #1DB954; /* Bright green to match the title */
+    font-size: 1.8rem;
     margin-bottom: 0.5rem;
-  }
-  
-  .member-info p {
-    color: #444;
-  }
-  
-  .team-member:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
-  }
-  
-  .team-member:hover .member-image img {
-    transform: scale(1.05); /* Image zoom on hover */
-  }
-  
+    font-weight: bold;
+}
+
+.member-info p {
+    color: #444; /* Medium gray for readability */
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.member-image:hover img {
+    transform: scale(1.1); /* Image zoom on hover */
+}
